@@ -52,6 +52,7 @@ header {
   margin-top: 10%;
 }
 
+
 button {
   width: 45%;
   height: 4vh;
@@ -154,17 +155,18 @@ button img {
   width: 45%;
 }
 
+.reg-inputs input {
+  outline:none;
+  border: none;
+  background-color: #fbfbfb;
+}
+
 .reg-inputs label:focus-within {
   box-shadow: -2px 0px 0px 0px #3698FB;
 }
 
 .reg-inputs label:hover, input:hover {
   background-color: #f1f1f1;
-}
-
-.reg-inputs input {
-  outline:none;
-  border: none;
 }
 
 .survey-header{
@@ -228,4 +230,10 @@ button img {
 
 .create:hover {
   background-color: rgb(83, 192, 255);
+}
+
+@media (max-width: 68.25em) {
+  .agreement {
+    margin: 15% 0 10% 0;
+  }
 }
