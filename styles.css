@@ -232,8 +232,8 @@ button img {
   background-color: rgb(83, 192, 255);
 }
 
-@media (max-width: 68.25em) {
+/* @media (max-width: 68.25em) {
   .agreement {
     margin: 15% 0 10% 0;
   }
-}
+} */
