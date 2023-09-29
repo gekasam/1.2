@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>1.2-task</title>
+    <meta name="description" content="1.2-task">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg">
+        <img class="logo" src="./img/logo.svg">
+        <img class="bgimg" src="./img/bg.jpg">
+      </div>
+      <div class="form">
+        <header>
+          <h1>Get iintoo in today</h1>
+          <p>There is no charge oe obligation upon registration</p>
+        </header>
+        <div class="registration">
+          <div class="reg-buttons">
+            <button class="reg-facebook"><img src="./img/facebook.svg"></img>Register in Facebook</button>
+            <button class="reg-linkedin"><img src="./img/linkedin.svg"></img>Register in Linkedin</button>
+          </div>
+          <div class="or">
+            <div class="separator"></div><p>OR</p><div class="separator"></div>
+          </div>
+          <div class="reg-inputs">
+            <label for="email"
+              >Email<input 
+                      class="input-email" 
+                      id="email" 
+                      type="email" 
+                      value="gus.goodwin@gmail.com"
+                      ></label
+            >
+            <label for="number"
+              >Phone<input 
+                      class="input-number" 
+                      id="number" 
+                      type="tel"
+                      ></label
+            >
+          </div>
+        </div>
+          <div class="survey-header">
+            <h2>What type of invesor are you?</h2>
+            <p class="investor">Select the type of inwestor you are below.</p>
+          </div>
+          <div class="investor-radio">
+            <label for="individual"
+              ><input class="input-radio" id="individual" type="radio" name="investorType"
+                >Individual<span class="tooltip" data-tooltip="I am a natural person investing on my own behalf as a sole owner,joint tennant, or tenent in common">&#9432;</span></label
+            >
+            <label for="business"
+              ><input class="input-radio" id="business" type="radio" name="investorType"
+                >Business<span class="tooltip" data-tooltip="I am a business...">&#9432;</span></label
+            >
+            <label for="ira"
+              ><input class="input-radio" id="ira" type="radio" name="investorType"
+                >IRA<span class="tooltip" data-tooltip="I am IRA...">&#9432;</span></label
+            >
+                        <label for="trust"
+              ><input class="input-radio" id="trust" type="radio" name="investorType"
+                >Trust<span class="tooltip" data-tooltip="I am trust...">&#9432;</span></label
+            >
+          </div>
+          <div class="agreement">
+            <label class="agreement-label" for="agreement"
+              ><input class="input-checkbox" type="checkbox" id="agreement"
+                >I agree to the terms and receiving notifications from iintoo <a href=""
+                                                                                >View full terms</a
+                                                                              ></label
+            >
+          </div>
+          <button class="create">Create Account</button>
+      </div>
+    </div>
+  </body>
+</html>

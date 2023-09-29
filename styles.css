@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'barlowregular';
+  src: url('./fonts/barlow-fontfacekit/barlow_regular_macroman/Barlow-Regular-webfont.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+/*   border: 1px solid black; */
+}
+
+html {
+  font-family: "barlowregular";
+  font-size: 62.5%;
+  color: #2A4A5C;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFF6FF;
+}
+
+h1 {
+
+}
+
+header {
+  margin-top: 10%;
+}
+
+button {
+  width: 45%;
+  height: 4vh;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button img {
+  display: inline-block;
+  width: 10%;
+  height: auto;
+}
+
+.container {
+  max-height: 90%;
+  margin: 7%;
+  display: flex;
+  aspect-ratio: 3/2;
+}
+
+.bg {
+  width: 52%;
+}
+
+.logo {
+  margin: 2%;
+  position: absolute;
+  width: 10%;
+}
+
+.bgimg {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.form {
+  width: 48%;
+  padding: 5% 4% 5% 4%; 
+  background-color: #fbfbfb;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0;
+}
+
+.reg-facebook {
+  background-color: #255A9B;
+}
+
+.reg-facebook:hover {
+  background-color: #0076B6;
+}
+
+.reg-linkedin {
+  background-color: #0076B6;
+}
+
+.reg-linkedin:hover {
+  background-color: #3698FB;
+}
+
+.or {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator {
+  margin: 1%;
+  height: 0;
+  width: 30%;
+  border: 1px solid #AFAFAF;
+}
+
+.reg-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0;
+}
+
+.reg-inputs label {
+  border: 1px solid #AFAFAF;
+  border-radius: 1%;
+  padding: 1%;
+  display: grid;
+  width: 45%;
+}
+
+.reg-inputs label:focus-within {
+  box-shadow: -2px 0px 0px 0px #3698FB;
+}
+
+.reg-inputs label:hover, input:hover {
+  background-color: #f1f1f1;
+}
+
+.reg-inputs input {
+  outline:none;
+  border: none;
+}
+
+.survey-header{
+  margin: 5% 0;
+}
+
+.survey-header p {
+  margin: 3% 0 10% 0;
+}
+
+.investor-radio {
+  margin: 10% 0;
+}
+
+.investor-radio label {
+  margin-right: 8%; 
+}
+
+.input-radio {
+  margin-right: 2%;
+}
+
+.tooltip {
+	cursor: help;
+  margin-left: 1%;
+}
+
+.tooltip::after {
+  width: 11%;
+	background: #FFFFFF;
+	border-radius: 2%;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
+	color: #070606;
+	content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+	margin-top: 2%;
+  margin-left: -4%;
+	opacity: 0; /* Наш элемент прозрачен... */
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden; /* ...и скрыт. */
+	transition: all 0.4s ease-in-out; /* Добавить плавности по вкусу */
+}
+		
+.tooltip:hover::after {
+	opacity: 1; /* Показываем его */
+	visibility: visible;
+}
+
+.agreement {
+  margin: 20% 0 10% 0;
+}
+
+.input-checkbox {
+  margin-right: 2%;
+}
+
+.create {
+  background-color: #3698FB;
+  border-radius: 5px;
+}
+
+.create:hover {
+  background-color: rgb(83, 192, 255);
+}
